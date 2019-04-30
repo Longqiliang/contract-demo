@@ -1,0 +1,28 @@
+@import "mixins/mixins";
+@import "mixins/untils";
+@import "_vars";
+
+@include b(swipe-group){
+  width: 100%;
+  color: #fff;
+  font-size: 15px;
+  display: flex;
+  height: 100%;
+}
+
+@include b(swipe-item){
+  width: 65px;
+  height: 100%;
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include m(edit) {
+    background-color: $primary-color;
+  }
+
+  @include m(del) {
+    background-color: #f44;
+  }
+}

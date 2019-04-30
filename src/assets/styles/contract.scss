@@ -1,0 +1,206 @@
+.contract {
+  font-size: 13px;
+  // margin-bottom: calc( env(safe-area-inset-bottom));
+  &-content{
+    overflow: auto;
+    // margin-bottom: 50px;
+  }
+  &-search {
+    background: #3988f3 !important;
+    &-icon{
+      color: #fff;
+    }
+  }
+  &-item {
+    padding: 10px;
+    border-bottom: 1px solid #e5e5e5;
+    &-title {
+      font-weight: bold;
+      font-size: 16px;
+    }
+    .van-col{
+     padding: 2px 0;
+    }
+  }
+  &-addBtn.van-button{
+    position: fixed;
+    right: 20px;
+    bottom: 70px;
+    bottom: calc(70px + env(safe-area-inset-bottom));
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    line-height: 64px;
+    z-index: 9999;
+    // visibility: hidden;
+  }
+  
+  &-field {
+    margin-bottom: 10px;
+    padding: 5px 0 10px;
+    background: #fff;
+    &.no-padding {
+      padding: 0;
+    }
+    &-title {
+      height: 20px;
+      //line-height: 20px;
+      padding-left: 15px;
+      font-size: 15px;
+      line-height: 24px;
+      font-weight: bold;
+      color: #333;
+    }
+    &-accessory{
+      margin: 10px 0;
+      span{
+        line-height: 25px;
+      }
+      .van-uploader{
+        padding: 3px 12px;
+        background: #E5E5E5;
+        border:1px solid #C6C6C6;
+        border-radius: 2px;
+      }
+      &-item{
+        display: inline-block;
+        //padding:0 5px;
+        // margin: 2px 12px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space:nowrap;
+        height: 20px;
+        max-width: 90%;
+        //background: #D7E7FD;
+      }
+      em{
+        font-style: normal;
+        font-size:6px;
+        margin-left: 5px;
+        vertical-align: top;
+        color: #F93E3E;
+      }
+    }
+    .van-col {
+      .van-cell-group.van-hairline--top-bottom {
+        &::after {
+          border-width: 0;
+        }
+      }
+    }
+    .img-content{
+      position: relative;
+      display: inline-block;
+      margin-right: 10px;
+      em{
+        position: absolute;;
+        display: inline-block;
+        width:20px;
+        height: 20px;
+        right: -10px;
+        top: 0px;
+        background: url('../images/close.gif');
+        background-size:100% 100%;
+      }
+      .img-item {
+        display: inline-block;
+        width: 42px;
+        height: 42px;
+        margin-left: 15px;
+        margin-top: 10px;
+      }
+      .img-loading{
+        margin-top: 0;
+        height: 18px;
+        .van-loading{
+          top: -6px;
+          right: -10px;
+        }
+      }
+      .img-plus{
+        background: url('../images/plus.png');
+        background-size:100% 100%;
+      }
+    }
+    .plan-item{
+      padding-bottom: 5px;
+      margin-bottom: 5px;
+      .contract-field-title{
+        line-height: 22px;
+      }
+      .van-row{
+        line-height: 22px;
+      }
+    }
+  }
+  &.addField{
+    .van-cell.sel-cell{
+      .van-cell__title{
+        max-width: 110px;
+        font-size: 15px;
+        line-height: 24px;
+        margin-bottom: 3px;
+        font-weight: bold;
+        color: #333;
+      }
+      &.noweight{
+        .van-cell__title{
+          font-size: 14px;
+          font-weight: 100;
+        }
+      }
+    }
+  }
+  .linkman{
+    line-height: 40px;
+    font-size: 13px;
+    color: #333;
+    .contract-field-title{
+      font-size: 13px;
+      color: #333;
+      font-weight: 100;
+      line-height: 40px;
+      height: 40px;
+    }
+    &:last-child{
+      border-bottom:1px solid #ebedf0; 
+    }
+  }
+  &-linkman{
+    &.van-radio-group{
+      padding: 0 15px;
+      .van-radio{
+        line-height: 35px;
+      }
+    }
+    &.van-checkbox-group{
+      padding: 0 15px;
+      .van-checkbox{
+        line-height: 35px;
+      }
+    }
+  }
+  .van-swipe-cell__right{
+    width: 130px;
+    .right-operation{
+      height: 100%;
+      &-item{
+        float: left;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 50%;
+        color: #fff;
+        background: #08D6A3;
+        &.danger{
+          background: #f44;
+        }
+      }
+    }
+  }
+}
+.file-progress{
+  width: 100%;
+  margin: 0 15px 10px;
+}

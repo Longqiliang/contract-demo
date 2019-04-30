@@ -1,0 +1,141 @@
+@import "./_vars.scss";
+
+html,
+body {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: Microsoft YaHei;
+  color: $black;
+  min-height: 100vh;
+  margin: 0;
+}
+
+section {
+  overflow: hidden;
+}
+
+.margin-button-10,
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.mb5 {
+  margin-bottom: 5px;
+}
+
+.mt15 {
+  margin-top: 15px;
+}
+
+.pt10 {
+  padding-top: 10px;
+}
+
+.min130 {
+  min-height: 130px;
+}
+
+.padding-left-15 {
+  padding-left: 15px;
+}
+
+.of {
+  overflow: hidden;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.padding-left-15 {
+  padding-left: 15px;
+}
+
+
+.van-cell.sel-cell {
+  .van-cell__title {
+    max-width: 90px;
+  }
+
+  .van-cell__value {
+    text-align: left;
+    height: 26px;
+  }
+}
+
+.bottomTool {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  padding: 15px;
+
+  &-left {
+    text-align: left;
+  }
+
+  &-right {
+    text-align: right;
+  }
+
+  em {
+    padding: 0 3px;
+    font-style: normal;
+    color: #1989fa;
+  }
+
+  .middle {
+    line-height: 42px;
+  }
+}
+
+.van-cell__value {
+  &.van-cell__value--alone {
+    color: #969799;
+  }
+}
+
+// .z-large {
+//   &.van-button--large {
+//     height: 30px;
+//     line-height: 30px;
+
+//     .van-button__text {
+//       line-height: 28px;
+//     }
+//   }
+// }
+
+.nomore {
+  color: #969799;
+  font-size: 13px;
+  display: flex;
+  padding: 10px 0;
+  justify-content: center;
+}
+
+.icon-close {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: url('../images/close2.gif');
+  background-size: 100% 100%;
+}
+
+.loading-popup.van-popup {
+  background: transparent;
+}
+
+.center{
+  text-align: center;
+}
+.preBtn{
+  display: inline-block;
+  margin: 20px 0;
+  color: #1989fa;
+}
+.overflowHidden{
+  overflow: hidden;
+}

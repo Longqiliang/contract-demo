@@ -1,0 +1,45 @@
+@import "mixins/mixins";
+@import "mixins/untils";
+@import "_vars";
+
+@include b(row-padded) {
+  display: block;
+  padding: 0 10px;
+
+  .btn-block {
+    width: 100%;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+}
+
+@include b(form) {
+  .radio-group {
+    padding: 0 15px 5px;
+  }
+}
+
+.radio-group {
+  padding: 5px 15px;
+  overflow: hidden;
+  font-size: 14px;
+
+  .right {
+    float: right;
+  }
+}
+
+
+@include b(select) {
+  border: 1px solid $border-color-base;
+  padding: 5px 18px 5px 5px;
+  position: relative;
+  display: inline-block;
+
+  .z-select__icon {
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+  }
+}

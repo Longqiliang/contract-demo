@@ -1,0 +1,78 @@
+@import "mixins/mixins";
+@import "mixins/untils";
+@import "_vars";
+
+
+@mixin cell-tit {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 3px;
+  font-weight: bold;
+  color: $black;
+}
+
+@include b(cell) {
+  overflow: hidden;
+  padding: 10px;
+  position: relative;
+  @include m(large) {
+    padding: 10px 20px;
+  }
+
+  @include m(hairline) {
+    &.z-cell::after{
+      left: 10px;
+    }
+  }
+  @include m(light) {
+    &.z-cell::after{
+      border-color: $border-color-light;
+    }
+  }
+
+  @include m(borderless) {
+    &::after{
+      display: none;
+    }
+  }
+
+  &::after {
+    @include hairline-bottom($border-color-base);
+  }
+}
+
+@include b(cell-group) {
+  background-color: $white;
+  position: relative;
+  @include e(title) {
+    @include cell-tit;
+    padding: 10px 10px 0;
+  }
+}
+
+@include b(cell-tit) {
+  @include cell-tit;
+}
+
+@include b(cell-item) {
+  font-size: 14px;
+  color: $black;
+  overflow: hidden;
+
+  @include e(label) {
+    min-width: 5em;
+    float: left;
+    margin-right: 10px;
+    text-align: left;
+    font-weight: 400;
+    margin-bottom: 0;
+    @include m(right) {
+      text-align: right;
+    }
+  }
+
+  @include e(content) {
+    display: block;
+  }
+
+}

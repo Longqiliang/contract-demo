@@ -1,0 +1,19 @@
+.z-icon { position: relative; display:inline-block; }
+.z-icon.z-icon-add{ width: 18px; height: 18px; }
+.z-icon.z-icon-add::after { content: ""; display:block; position:absolute; top: -50%; left: -50%; width: 36px; height: 36px; background-image: url(../images/sprites.png); background-position: 0px -90px; transform: scale(.5); }
+.z-icon.z-icon-arrow-down{ width: 10px; height: 10px; }
+.z-icon.z-icon-arrow-down::after { content: ""; display:block; position:absolute; top: -50%; left: -50%; width: 20px; height: 20px; background-image: url(../images/sprites.png); background-position: -74px -90px; transform: scale(.5); }
+.z-icon.z-icon-contract.is-active::after { background-position: -39px 0px; }
+.z-icon.z-icon-contract{ width: 17.5px; height: 20.5px; }
+.z-icon.z-icon-contract::after { content: ""; display:block; position:absolute; top: -50%; left: -50%; width: 35px; height: 41px; background-image: url(../images/sprites.png); background-position: -78px 0px; transform: scale(.5); }
+.z-icon.z-icon-export.is-active::after { background-position: 0px -45px; }
+.z-icon.z-icon-export{ width: 17.5px; height: 20px; }
+.z-icon.z-icon-export::after { content: ""; display:block; position:absolute; top: -50%; left: -50%; width: 35px; height: 40px; background-image: url(../images/sprites.png); background-position: -117px -45px; transform: scale(.5); }
+.z-icon.z-icon-payment.is-active::after { background-position: -78px -45px; }
+.z-icon.z-icon-payment{ width: 17.5px; height: 20.5px; }
+.z-icon.z-icon-payment::after { content: ""; display:block; position:absolute; top: -50%; left: -50%; width: 35px; height: 41px; background-image: url(../images/sprites.png); background-position: -117px 0px; transform: scale(.5); }
+.z-icon.z-icon-sort{ width: 15px; height: 15px; }
+.z-icon.z-icon-sort::after { content: ""; display:block; position:absolute; top: -50%; left: -50%; width: 30px; height: 30px; background-image: url(../images/sprites.png); background-position: -40px -90px; transform: scale(.5); }
+.z-icon.z-icon-statistics.is-active::after { background-position: -39px -45px; }
+.z-icon.z-icon-statistics{ width: 17.5px; height: 20.5px; }
+.z-icon.z-icon-statistics::after { content: ""; display:block; position:absolute; top: -50%; left: -50%; width: 35px; height: 41px; background-image: url(../images/sprites.png); background-position: 0px 0px; transform: scale(.5); }
